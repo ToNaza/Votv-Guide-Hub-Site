@@ -1,0 +1,1304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: rgb(76,76,76);
+    background: linear-gradient(142deg, rgba(76,76,76,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+.Nazwa {
+    font-size: 23px;
+    font-family: 'Kalam';
+    background-color: black;
+    margin: 10px;
+    padding: 5px;
+    width: 190px; 
+    height: 40px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.votv {
+    color: white;
+}
+
+.hub {
+    color: #FF8000;
+}
+
+.osnova {
+    text-align: center;
+    font-size: 35px;
+    color: #66E3FF;
+    font-family: 'Kalam';
+    margin-top: 20px;
+}
+
+main, p {
+    color: white;
+    font-size: 18px;
+    width: 1300px;
+    text-align: center;
+    margin: auto;
+    margin-top: 45px;
+    padding-bottom: 10px;
+}
+
+.button_p {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.button_p button {
+    margin: 10px;
+    width: 350px;
+    height: 35px;
+    
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.p4 button {
+    color: white;
+}
+
+.settings {
+    margin-top: 100px;
+    margin: -80px;
+    width: 31px;
+    padding-top: 4px;
+    background-color: #D9D9D9;
+    border-radius: 14px;
+    font-size: 16px;
+}
+
+.posSet{
+    text-align: right;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+}
+
+.footer_block button {
+    margin: 10px;
+    width: 400px;
+    height: 25px;
+    background-color: #D9D9D9;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+.skladka p {
+    margin-top: -35px;
+    color: black;
+}
+
+.osnova{
+    text-align: center;
+}
+
+.kanal, .chat{
+    width: 450px;
+    height: 70px;
+    background-color: #676B91;
+    margin-bottom: 40px;
+    display: inline-block;
+    border-radius: 17px;
+    margin: 30px;
+    }
+
+    .kanal img, .chat img{
+    width: 70px;
+    border-radius: 17px;
+    margin-left: -380px;
+    }
+
+    .kanalP{
+        color: white;
+        font-size: 20px;
+        margin-top: -68px;
+        margin-right: -50px;
+    }
+
+
+    
+
+    .Vop-1{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99998;
+      background-color: rgba(0, 0, 0, 0.659);
+      display:grid;
+      align-items: center;
+      overflow: auto;
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity .4s, visibility .4s;
+      }
+      
+      .Vop-1_box{
+      width: 350px;
+      height: 320px;
+      padding: 55px;
+      z-index: 1;
+      background-color: rgb(179, 179, 179);
+      background-color: EFEFEF;
+      border-radius: 18px;
+      font-size: 16px;
+      margin: auto;
+      
+      -webkit-box-shadow: 5px 5px 11px 17px rgba(0,0,0,0.16);
+      -moz-box-shadow: 5px 5px 11px 17px rgba(0,0,0,0.16);
+      box-shadow: 5px 5px 11px 17px rgba(0,0,0,0.16);
+      
+      transform: scale(0);
+      transition: transform .6s ;
+      
+       .zagol{
+        color: rgb(0, 0, 0);
+        margin-left: -530px;
+        margin-top: -45px;
+        font-size: 20px;
+        margin-bottom: 10px;
+       }
+
+       .text{
+        color: black;
+        margin-left: -55px;
+        width: 350px;
+        margin-top: -1px;
+        font-family: 'Jura';
+        margin-bottom: 10px;
+       }
+
+       button{
+        width: 300px;
+        height: 30px;
+        background-color: #3D9DF5;
+        border: 0px;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); 
+        border-radius: 10px;
+        margin-left: -30px;
+        margin-bottom: 30px;
+       }
+      
+      }
+      
+      .Vop-1.open{
+        visibility: visible;
+        opacity: 1;
+      }
+      
+      .Vop-1.open .Vop-1_box{
+        transform: scale(1);
+      }
+
+
+
+      .Vop-2 {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99998;
+        background-color: rgba(0, 0, 0, 0.659);
+        display: grid;
+        align-items: center;
+        overflow: auto;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity .4s, visibility .4s;
+    }
+    
+    .Vop-2_box {
+        width: 350px;
+        height: 320px;
+        padding: 55px;
+        z-index: 1;
+        background-color: rgb(179, 179, 179);
+        background-color: EFEFEF;
+        border-radius: 18px;
+        font-size: 16px;
+        margin: auto;
+    
+        -webkit-box-shadow: 5px 5px 11px 17px rgba(0, 0, 0, 0.16);
+        -moz-box-shadow: 5px 5px 11px 17px rgba(0, 0, 0, 0.16);
+        box-shadow: 5px 5px 11px 17px rgba(0, 0, 0, 0.16);
+    
+        transform: scale(0);
+        transition: transform .6s;
+    }
+    
+    .Vop-2_box .zagol {
+        color: rgb(0, 0, 0);
+        margin-left: -530px;
+        margin-top: -45px;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .Vop-2_box .text {
+        color: black;
+        margin-left: -55px;
+        width: 350px;
+        margin-top: -1px;
+        font-family: 'Jura';
+        margin-bottom: 10px;
+    }
+    
+    .Vop-2_box button {
+        width: 300px;
+        height: 30px;
+        background-color: #3D9DF5;
+        border: 0px;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        margin-left: -30px;
+        margin-bottom: 30px;
+    }
+    
+    .Vop-2.open {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    .Vop-2.open .Vop-2_box {
+        transform: scale(1);
+    }
+
+
+    .Vop-3 {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99998;
+        background-color: rgba(0, 0, 0, 0.659);
+        display: grid;
+        align-items: center;
+        overflow: auto;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity .4s, visibility .4s;
+    }
+    
+    .Vop-3_box {
+        width: 350px;
+        height: 260px;
+        padding: 55px;
+        z-index: 1;
+        background-color: rgb(179, 179, 179);
+        background-color: EFEFEF;
+        border-radius: 18px;
+        font-size: 16px;
+        margin: auto;
+    
+        -webkit-box-shadow: 5px 5px 11px 17px rgba(0, 0, 0, 0.16);
+        -moz-box-shadow: 5px 5px 11px 17px rgba(0, 0, 0, 0.16);
+        box-shadow: 5px 5px 11px 17px rgba(0, 0, 0, 0.16);
+    
+        transform: scale(0);
+        transition: transform .6s;
+    }
+    
+    .Vop-3_box .zagol {
+        color: rgb(0, 0, 0);
+        margin-left: -530px;
+        margin-top: -45px;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .Vop-3_box .text {
+        color: black;
+        margin-left: -55px;
+        width: 350px;
+        margin-top: -1px;
+        font-family: 'Jura';
+        margin-bottom: 10px;
+    }
+    
+    .Vop-3_box button {
+        width: 300px;
+        height: 30px;
+        background-color: #3D9DF5;
+        border: 0px;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        margin-left: -30px;
+        margin-bottom: 30px;
+    }
+    
+    .Vop-3.open {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    .Vop-3.open .Vop-3_box {
+        transform: scale(1);
+    }
+
+
+
+    .Vop-4 {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99998;
+        background-color: rgba(0, 0, 0, 0.659);
+        display: grid;
+        align-items: center;
+        overflow: auto;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity .4s, visibility .4s;
+    }
+    
+    .Vop-4_box {
+        width: 350px;
+        height: 320px;
+        padding: 55px;
+        z-index: 1;
+        background-color: rgb(179, 179, 179);
+        background-color: EFEFEF;
+        border-radius: 18px;
+        font-size: 16px;
+        margin: auto;
+    
+        -webkit-box-shadow: 5px 5px 11px 17px rgba(0, 0, 0, 0.16);
+        -moz-box-shadow: 5px 5px 11px 17px rgba(0, 0, 0, 0.16);
+        box-shadow: 5px 5px 11px 17px rgba(0, 0, 0, 0.16);
+    
+        transform: scale(0);
+        transition: transform .6s;
+    }
+    
+    .Vop-4_box .zagol {
+        color: rgb(0, 0, 0);
+        margin-left: -530px;
+        margin-top: -45px;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .Vop-4_box .text {
+        color: black;
+        margin-left: -55px;
+        width: 350px;
+        margin-top: -1px;
+        font-family: 'Jura';
+        margin-bottom: 10px;
+    }
+    
+    .Vop-4_box button {
+        width: 300px;
+        height: 30px;
+        background-color: #3D9DF5;
+        border: 0px;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        margin-left: -30px;
+        margin-bottom: 30px;
+    }
+    
+    .Vop-4.open {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    .Vop-4.open .Vop-4_box {
+        transform: scale(1);
+    }
+    
+    .Vop-5 {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99998;
+        background-color: rgba(0, 0, 0, 0.659);
+        display: grid;
+        align-items: center;
+        overflow: auto;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity .4s, visibility .4s;
+    }
+    
+    .Vop-5_box {
+        width: 350px;
+        height: 320px;
+        padding: 55px;
+        z-index: 1;
+        background-color: rgb(179, 179, 179);
+        background-color: EFEFEF;
+        border-radius: 18px;
+        font-size: 16px;
+        margin: auto;
+    
+        -webkit-box-shadow: 5px 5px 11px 17px rgba(0, 0, 0, 0.16);
+        -moz-box-shadow: 5px 5px 11px 17px rgba(0, 0, 0, 0.16);
+        box-shadow: 5px 5px 11px 17px rgba(0, 0, 0, 0.16);
+    
+        transform: scale(0);
+        transition: transform .6s;
+    }
+    
+    .Vop-5_box .zagol {
+        color: rgb(0, 0, 0);
+        margin-left: -530px;
+        margin-top: -45px;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .Vop-5_box .text {
+        color: black;
+        margin-left: -55px;
+        width: 350px;
+        margin-top: -1px;
+        font-family: 'Jura';
+        margin-bottom: 10px;
+    }
+    
+    .Vop-5_box button {
+        width: 300px;
+        height: 30px;
+        background-color: #3D9DF5;
+        border: 0px;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        margin-left: -30px;
+        margin-bottom: 30px;
+    }
+    
+    .Vop-5.open {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    .Vop-5.open .Vop-5_box {
+        transform: scale(1);
+    }
+    
+    .Vop-6 {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99998;
+        background-color: rgba(0, 0, 0, 0.659);
+        display: grid;
+        align-items: center;
+        overflow: auto;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity .4s, visibility .4s;
+    }
+    
+    .Vop-6_box {
+        width: 350px;
+        height: 320px;
+        padding: 55px;
+        z-index: 1;
+        background-color: rgb(179, 179, 179);
+        background-color: EFEFEF;
+        border-radius: 18px;
+        font-size: 16px;
+        margin: auto;
+    
+        -webkit-box-shadow: 5px 5px 11px 17px rgba(0, 0, 0, 0.16);
+        -moz-box-shadow: 5px 5px 11px 17px rgba(0, 0, 0, 0.16);
+        box-shadow: 5px 5px 11px 17px rgba(0, 0, 0, 0.16);
+    
+        transform: scale(0);
+        transition: transform .6s;
+    }
+    
+    .Vop-6_box .zagol {
+        color: rgb(0, 0, 0);
+        margin-left: -530px;
+        margin-top: -45px;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .Vop-6_box .text {
+        color: black;
+        margin-left: -55px;
+        width: 350px;
+        margin-top: -1px;
+        font-family: 'Jura';
+        margin-bottom: 10px;
+    }
+    
+    .Vop-6_box button {
+        width: 300px;
+        height: 30px;
+        background-color: #3D9DF5;
+        border: 0px;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        margin-left: -30px;
+        margin-bottom: 30px;
+    }
+    
+    .Vop-6.open {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    .Vop-6.open .Vop-6_box {
+        transform: scale(1);
+    }
+    
+    .Vop-7 {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99998;
+        background-color: rgba(0, 0, 0, 0.659);
+        display: grid;
+        align-items: center;
+        overflow: auto;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity .4s, visibility .4s;
+    }
+    
+    .Vop-7_box {
+        width: 400px;
+        height: 420px;
+        padding: 55px;
+        z-index: 1;
+        background-color: rgb(179, 179, 179);
+        background-color: EFEFEF;
+        border-radius: 18px;
+        font-size: 16px;
+        margin: auto;
+    
+        -webkit-box-shadow: 5px 5px 11px 17px rgba(0, 0, 0, 0.16);
+        -moz-box-shadow: 5px 5px 11px 17px rgba(0, 0, 0, 0.16);
+        box-shadow: 5px 5px 11px 17px rgba(0, 0, 0, 0.16);
+    
+        transform: scale(0);
+        transition: transform .6s;
+    }
+    
+    .Vop-7_box .zagol {
+        color: rgb(0, 0, 0);
+        margin-left: -500px;
+        margin-top: -45px;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .Vop-7_box .text {
+        color: black;
+        margin-left: -30px;
+        width: 350px;
+        margin-top: -1px;
+        font-family: 'Jura';
+        margin-bottom: 10px;
+    }
+    
+    button{
+        width: 300px;
+        height: 30px;
+        background-color: #3D9DF5;
+        border: 0px;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); 
+        border-radius: 10px;
+        margin-left: -30px;
+        margin-bottom: 30px;
+       }
+
+
+    .Vop-7.open {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    .Vop-7.open .Vop-7_box {
+        transform: scale(1);
+    }
+
+
+
+    .Vop-8 {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99998;
+        background-color: rgba(0, 0, 0, 0.659);
+        display: grid;
+        align-items: center;
+        overflow: auto;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity .4s, visibility .4s;
+    }
+    
+    .Vop-8_box {
+        width: 350px;
+        height: 430px;
+        padding: 55px;
+        z-index: 1;
+        background-color: rgb(179, 179, 179);
+        background-color: EFEFEF;
+        border-radius: 18px;
+        font-size: 16px;
+        margin: auto;
+    
+        -webkit-box-shadow: 5px 5px 11px 17px rgba(0, 0, 0, 0.16);
+        -moz-box-shadow: 5px 5px 11px 17px rgba(0, 0, 0, 0.16);
+        box-shadow: 5px 5px 11px 17px rgba(0, 0, 0, 0.16);
+    
+        transform: scale(0);
+        transition: transform .6s;
+    }
+    
+    .Vop-8_box .zagol {
+        color: rgb(0, 0, 0);
+        margin-left: -530px;
+        margin-top: -45px;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .Vop-8_box .text {
+        color: black;
+        margin-left: -55px;
+        width: 350px;
+        margin-top: -1px;
+        font-family: 'Jura';
+        margin-bottom: 10px;
+    }
+    
+    .Vop-8_box button{
+        width: 300px;
+        height: 30px;
+        background-color: #3D9DF5;
+        border: 0px;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); 
+        border-radius: 10px;
+        margin-left: -30px;
+        margin-bottom: 30px;
+       }
+
+
+    .Vop-8.open {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    .Vop-8.open .Vop-8_box {
+        transform: scale(1);
+    }
+
+
+
+    #Mova {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99998;
+        background-color: rgba(0, 0, 0, 0.659);
+        display: grid;
+        align-items: center;
+        overflow: auto;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity .4s, visibility .4s;
+    }
+    
+    .Mova_box {
+        width: 350px;
+        height: 290px;
+        padding: 55px;
+        z-index: 1;
+        background-color: rgb(179, 179, 179);
+        background-color: #EFEFEF;
+        border-radius: 18px;
+        font-size: 16px;
+        margin: auto;
+    
+        -webkit-box-shadow: 5px 5px 11px 17px rgba(0, 0, 0, 0.16);
+        -moz-box-shadow: 5px 5px 11px 17px rgba(0, 0, 0, 0.16);
+        box-shadow: 5px 5px 11px 17px rgba(0, 0, 0, 0.16);
+    
+        transform: scale(0);
+        transition: transform .6s;
+    }
+    
+    .Mova_box .zagol {
+        color: rgb(0, 0, 0);
+        margin-left: -530px;
+        margin-top: -45px;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .Mova_box .text {
+        color: black;
+        margin-left: -55px;
+        width: 350px;
+        margin-top: -1px;
+        font-family: 'Jura';
+        margin-bottom: 10px;
+
+    }
+    
+    .Mova_box button {
+        width: 120px;
+        height: 20px;
+        background-color: #3D9DF5;
+        border: 0px;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+        margin-left: -30px;
+        margin-bottom: 30px;
+    }
+    
+    #Mova.open {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    #Mova.open .Mova_box {
+        transform: scale(1);
+    }
+
+
+
+
+    #music-controls {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        background-color: #f0f0f0;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 34px;
+        height: 20px;
+        margin-left: 20px;
+    }
+    
+    .switch input {
+        display: none;
+    }
+    
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        transition: .4s;
+        border-radius: 34px;
+    }
+    
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 14px;
+        width: 14px;
+        left: 3px;
+        bottom: 3px;
+        background-color: white;
+        transition: .4s;
+        border-radius: 50%;
+    }
+    
+    input:checked + .slider {
+        background-color: #2196F3;
+    }
+    
+    input:checked + .slider:before {
+        transform: translateX(14px);
+    }
+    
+    #volume {
+        width: 100px;
+    }
+
+
+    .pos3244{
+        width: 100px;
+        margin-top: 10px;
+        p{
+            margin-left: -480px;
+            margin-top: -50px;
+            color: black;
+        }
+    }
+
+
+    .uamov{
+        background-image: url('../media_file/UaFlag.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-size: 16px;
+        text-align: center;
+        cursor: pointer;
+        }
+        .rumov {
+            background-image: url('../media_file/RuFlag.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-size: 16px;
+            text-align: center;
+            cursor: pointer;
+            width: 100px; 
+            height: 100px;
+        }
+        
+            .usmov {
+                background-image: url('../media_file/USAFlag.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                font-size: 16px;
+                text-align: center;
+                cursor: pointer;
+                color: rgb(0, 0, 0);
+                border: 2px solid rgb(0, 0, 0);
+            }
+
+            .pos19031{
+                margin-left: -525px;
+                margin-top: -20px;
+                
+                p{
+                    color: black;
+                    padding: -50px;
+                }
+            }
+
+
+            .pos19032{
+                margin-left: -525px;
+                margin-top: -30px;
+                
+                p{
+                    color: black;
+                    padding: -50px;
+                }
+            }
+
+
+
+
+            .Roza {
+                position: fixed;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 99998;
+                background-color: rgba(0, 0, 0, 0.659);
+                display: grid;
+                align-items: center;
+                overflow: auto;
+                visibility: hidden;
+                opacity: 0;
+                transition: opacity .4s, visibility .4s;
+            }
+            
+            .Roza_box {
+                width: 350px;
+                height: 460px;
+                padding: 55px;
+                z-index: 1;
+                background-color: rgb(198, 198, 198);
+                border-radius: 18px;
+                font-size: 16px;
+                margin: auto;
+            
+                -webkit-box-shadow: 5px 5px 11px 17px rgba(0, 0, 0, 0.16);
+                -moz-box-shadow: 5px 5px 11px 17px rgba(0, 0, 0, 0.16);
+                box-shadow: 5px 5px 11px 17px rgba(0, 0, 0, 0.16);
+            
+                transform: scale(0);
+                transition: transform .6s;
+
+
+                p{
+                    margin-top: -30px;
+                    color: black;
+                    margin-left: -525px;
+                }
+
+                .zagol{
+                    margin: 25px;
+                    font-weight: 700;
+                    margin-left: -525px;
+                }
+
+                .text1{
+                   margin-bottom: 20px;
+                }
+
+                .text2{
+                    margin-top: 10px;
+                }
+            }
+            
+    
+            
+            .Roza_box button {
+                width: 120px;
+                height: 20px;
+                background-color: #3D9DF5;
+                border: 0px;
+                box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+                border-radius: 5px;
+                margin-left: -30px;
+                margin-bottom: 30px;
+            }
+            
+            .Roza.open {
+                visibility: visible;
+                opacity: 1;
+            }
+            
+            .Roza.open .Roza_box {
+                transform: scale(1);
+            }
+
+
+
+            .Help {
+                position: fixed;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 99998;
+                background-color: rgba(0, 0, 0, 0.795);
+                display: grid;
+                align-items: center;
+                overflow: auto;
+                visibility: hidden;
+                opacity: 0;
+                transition: opacity .4s, visibility .4s;
+            }
+            
+            .Help_box {
+                width: 400px;
+                height: 420px;
+                padding: 55px;
+                z-index: 1;
+                background-color: rgb(54, 54, 54);
+                border-radius: 18px;
+                font-size: 16px;
+                margin: auto;
+            
+                -webkit-box-shadow: 5px 5px 11px 17px rgba(0, 0, 0, 0.16);
+                -moz-box-shadow: 5px 5px 11px 17px rgba(0, 0, 0, 0.16);
+                box-shadow: 5px 5px 11px 17px rgba(0, 0, 0, 0.16);
+            
+                transform: scale(0);
+                transition: transform .6s;
+            }
+            
+            .Help_box .zagol {
+                color: rgb(255, 255, 255);
+                width: 300px;
+                text-align: center;
+                margin-top: -45px;
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+            
+            .Help_box .text {
+                color: rgb(255, 255, 255);
+                text-align: center;
+                width: 300px;
+                margin-top: -1px;
+                font-family: 'Jura';
+                margin-bottom: 10px;
+        
+            }
+            
+            .Help_box button {
+                width: 120px;
+                height: 20px;
+                background-color: #3D9DF5;
+                border: 0px;
+                box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+                border-radius: 5px;
+                margin-left: -30px;
+                margin-bottom: 30px;
+            }
+            
+            .Help.open {
+                visibility: visible;
+                opacity: 1;
+            }
+            
+            .Help.open .Help_box {
+                transform: scale(1);
+            }
+
+            .osnova{
+                text-align: center;
+
+                p{
+                    margin-left: -505px;
+                    margin-top: -5px;
+                    margin-bottom: -80px;
+                }
+              }
+
+            input{
+               width: 300px;
+                height: 22px;
+            }
+
+            #MyForm, #MyFormVop{
+                margin-top: -90px;
+                height: 300px;
+
+                button{
+                    width: 300px;
+                    height: 30px;
+                    border-radius: 20px;
+                    margin-right: -40px;
+                }
+            }
+
+            .vvod{
+                position: absolute;
+                margin-left: -145px;
+                margin-top: 20px;
+            }
+
+             .vvod1{
+                width: 300px;
+                height: 28px;
+                border: 0px;
+                border-radius: 9px;
+                background-color: D9D9D9;
+                font-family: 'Jura';
+                color: rgb(0, 0, 0);
+                padding-left: 10px;
+                margin-bottom: -50px;
+             }
+
+             .vvod2{
+                width: 300px;
+                height: 28px;
+                border: 0px;
+                border-radius: 9px;
+                background-color: D9D9D9;
+                font-family: 'Jura';
+                color: rgb(0, 0, 0);
+                padding-left: 10px;
+                }
+
+
+             .vvod3{
+                width: 300px;
+                height: 28px;
+                border: 0px;
+                border-radius: 9px;
+                background-color: D9D9D9;
+                font-family: 'Jura';
+                color: rgb(0, 0, 0);
+                padding-left: 10px;
+                position: absolute;
+                margin-left: -145px;
+                margin-top: -20px;
+             }
+
+
+
+             #Soop {
+                position: fixed;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 99999;
+                background-color: rgba(0, 0, 0, 0.659);
+                display: grid;
+                align-items: center;
+                overflow: auto;
+                visibility: hidden;
+                opacity: 0;
+                transition: opacity .4s, visibility .4s;
+            }
+            
+            .Soop_box {
+                width: 350px;
+                height: 160px;
+                padding: 55px;
+                z-index: 1;
+                background-color: rgb(179, 179, 179);
+                background-color: EFEFEF;
+                border-radius: 18px;
+                font-size: 16px;
+                margin: auto;
+            
+                -webkit-box-shadow: 5px 5px 11px 17px rgba(0, 0, 0, 0.16);
+                -moz-box-shadow: 5px 5px 11px 17px rgba(0, 0, 0, 0.16);
+                box-shadow: 5px 5px 11px 17px rgba(0, 0, 0, 0.16);
+            
+                transform: scale(0);
+                transition: transform .6s;
+            }
+            
+            .Soop_box .zagol {
+                color: rgb(0, 0, 0);
+                margin-left: -530px;
+                margin-top: -45px;
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+            
+            .Soop_box .text {
+                color: black;
+                margin-left: -55px;
+                width: 350px;
+                margin-top: -1px;
+                font-family: 'Jura';
+                margin-bottom: 10px;
+            }
+            
+            .Soop_box button{
+                width: 300px;
+                height: 30px;
+                background-color: #ff6f6f;
+                border: 0px;
+                box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); 
+                border-radius: 10px;
+                margin-top: 10px;
+                margin-bottom: 30px;
+               }
+        
+        
+            #Soop.open {
+                visibility: visible;
+                opacity: 1;
+            }
+            
+            #Soop.open .Soop_box {
+                transform: scale(1);
+            }
+
+
+
+
+
+            #Vopros {
+                position: fixed;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 99998;
+                background-color: rgba(0, 0, 0, 0.659);
+                display: grid;
+                align-items: center;
+                overflow: auto;
+                visibility: hidden;
+                opacity: 0;
+                transition: opacity .4s, visibility .4s;
+            }
+            
+            .Vopros_box {
+                width: 400px;
+                height: 450px;
+                padding: 55px;
+                z-index: 1;
+                background-color: rgb(179, 179, 179);
+                background-color: EFEFEF;
+                border-radius: 18px;
+                font-size: 16px;
+                margin: auto;
+            
+                -webkit-box-shadow: 5px 5px 11px 17px rgba(0, 0, 0, 0.16);
+                -moz-box-shadow: 5px 5px 11px 17px rgba(0, 0, 0, 0.16);
+                box-shadow: 5px 5px 11px 17px rgba(0, 0, 0, 0.16);
+            
+                transform: scale(0);
+                transition: transform .6s;
+            }
+            
+            .Vopros_box .zagol {
+                color: rgb(0, 0, 0);
+                margin-left: -500px;
+                margin-top: -45px;
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+            
+            .Vopros_box .text {
+                color: black;
+                margin-left: -25px;
+                width: 350px;
+                margin-top: -1px;
+                font-family: 'Jura';
+                margin-bottom: -70px;
+            }
+            
+            .Vopros_box button{
+                width: 300px;
+                height: 30px;
+                background-color: #3D9DF5;
+                border: 0px;
+                box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); 
+                border-radius: 10px;
+                margin-bottom: 30px;
+                margin-right: -35px;
+               }
+        
+        
+               #Vopros.open {
+                visibility: visible;
+                opacity: 1;
+            }
+            
+            #Vopros.open .Vopros_box {
+                transform: scale(1);
+            }
+        
+
+
+
+
+           

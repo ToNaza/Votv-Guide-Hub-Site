@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Nazwa {
+    font-size: 23px;
+    font-family: 'Kalam';
+    background-color: black; 
+    padding: 5px;
+    width: 190px; 
+    height: 40px;
+    margin: auto;
+    padding-left: 19px;
+    border-radius: 15px;
+}
+
+.votv {
+    color: white;
+}
+
+.hub {
+    color: #FF8000;
+}
+
+body{
+    background-image: url('../media_file/SiteBaza.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main{
+    background-color: rgba(204, 204, 204, 0.838);
+    width: 1200px;
+    margin: auto;
+    padding-top: 10px;
+    height: 1100px;
+}
+
+
+p{
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    width: 1000px;
+    margin-top: 70px;
+    margin-bottom: 59px;
+}
+
+
+
+.slider {
+    position: relative;
+    max-width: 70%;
+    margin: auto;
+    overflow: hidden;
+    border: 4px solid #000000;
+    border-radius: 20px;
+}
+
+.slider-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+
+
+.photo1{
+    position: absolute;
+
+    width: 30px;
+    height: 250px;
+    border-radius: 20px;
+
+margin-left: 140px;
+margin-top: -355px;
+}
+
+
+.photo2{
+position: absolute;
+
+    width: 30px;
+    height: 250px;
+    border-radius: 20px;
+
+    margin-left: 1030px;
+margin-top: -355px;
+}
+
+
+
+    #Mova {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99998;
+        background-color: rgba(0, 0, 0, 0.659);
+        display: grid;
+        align-items: center;
+        overflow: auto;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity .4s, visibility .4s;
+    }
+    
+    .Mova_box {
+        width: 350px;
+        height: 300px;
+        padding: 55px;
+        z-index: 1;
+        background-color: rgb(179, 179, 179);
+        background-color: #EFEFEF;
+        border-radius: 18px;
+        font-size: 16px;
+        margin: auto;
+    
+        -webkit-box-shadow: 5px 5px 11px 17px rgba(0, 0, 0, 0.16);
+        -moz-box-shadow: 5px 5px 11px 17px rgba(0, 0, 0, 0.16);
+        box-shadow: 5px 5px 11px 17px rgba(0, 0, 0, 0.16);
+    
+        transform: scale(0);
+        transition: transform .6s;
+    }
+    
+    .Mova_box .zagol {
+        color: rgb(0, 0, 0);
+        margin-left: -530px;
+        margin-top: -45px;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .Mova_box .text {
+        color: black;
+        margin-left: -55px;
+        width: 350px;
+        margin-top: -1px;
+        font-family: 'Jura';
+        margin-bottom: 10px;
+
+    }
+    
+    .Mova_box button {
+        width: 120px;
+        height: 20px;
+        background-color: #3D9DF5;
+        border: 0px;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+        margin-left: -30px;
+        margin-bottom: 30px;
+    }
+    
+    #Mova.open {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    #Mova.open .Mova_box {
+        transform: scale(1);
+    }
+
+
+
+
+    #music-controls {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        background-color: #f0f0f0;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    .switch2 {
+        position: relative;
+        display: inline-block;
+        width: 34px;
+        height: 20px;
+        margin-left: 20px;
+    }
+    
+    .switch2 input {
+        display: none;
+    }
+    
+    .slider2 {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        transition: .4s;
+        border-radius: 34px;
+    }
+    
+    .slider2:before {
+        position: absolute;
+        content: "";
+        height: 14px;
+        width: 14px;
+        left: 3px;
+        bottom: 3px;
+        background-color: white;
+        transition: .4s;
+        border-radius: 50%;
+    }
+    
+    input:checked + .slider2 {
+        background-color: #2196F3;
+    }
+    
+    input:checked + .slider2:before {
+        transform: translateX(14px);
+    }
+    
+    #volume {
+        width: 100px;
+    }
+
+
+
+    .uamov{
+        background-image: url('../media_file/UaFlag.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-size: 16px;
+        text-align: center;
+        cursor: pointer;
+        }
+        .rumov {
+            background-image: url('../media_file/RuFlag.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-size: 16px;
+            text-align: center;
+            cursor: pointer;
+            width: 100px; 
+            height: 100px;
+        }
+        
+            .usmov {
+                background-image: url('../media_file/USAFlag.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                font-size: 16px;
+                text-align: center;
+                cursor: pointer;
+                color: rgb(0, 0, 0);
+                border: 2px solid rgb(0, 0, 0);
+            }
+
+            .posSet{
+                text-align: right;
+                margin-top: -35px;
+                margin-right: -15px;
+            }
+
+
+            .settings {
+                margin: -80px;
+                width: 31px;
+                padding-top: 4px;
+                background-color: #D9D9D9;
+                border-radius: 14px;
+                font-size: 16px;
+            }
+
+            .zagol{
+                padding-left: 300px;
+                padding-bottom: 10px;
+            }
+
+            .MusicalN{
+                margin-left: -380px;
+                margin-top: -1px;
+            }
+
+            .pos1244{
+                margin-top: -40px;
+            }
+
+            .pos19031{
+                margin-left: -380px;
+                margin-top: -50px;
+            }
+
+            .posUA1212{
+                margin-left: -320px;
+                margin-top: -120px;
+            }
+
+            .posRU1212{
+                margin-left: -333px;
+                margin-top: -122px;
+            }
+
+            .posUS1212{
+                margin-left: -350px;
+                margin-top: -122px;
+            }
+
+            .posUA1213{
+                margin-top: -50px;
+            }
+
+            .posRU1213{
+                margin-top: -34px;
+            }
+
+            .posUS1213{
+                margin-top: -35px;
+            }

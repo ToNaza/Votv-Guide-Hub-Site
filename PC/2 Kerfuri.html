@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VotV Guide Hub</title>
+
+    <link rel="icon" href="../media_file/Votv Hub Ava.png">
+    <link rel="stylesheet" href="2 KerfuriCSS.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <main>
+        <div class="Nazwa">
+            <span class="votv">VotV Guide</span> 
+            <span class="hub">Hub</span> 
+        </div>
+        <p>Керфури, їх призначення в грі, як ними користвуватися та головне, як швидко на них заробити, ви знайтете на цьому посту.</p>
+
+        <div class="slider">
+            <div class="slider-container">
+                <div class="slide"><img src="../media_file/KerfurPhoto1.jpg" alt="Image 1"></div>
+                <div class="slide"><img src="../media_file/KerfurPhoto2.jpg" alt="Image 2"></div>
+                <div class="slide"><img src="../media_file/KerfurPhoto3.jpg" alt="Image 3"></div>
+                <div class="slide"><img src="../media_file/KerfurPhoto4.jpg" alt="Image 4"></div>
+            </div>
+        </div>
+            <button class="photo1" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="photo2" onclick="changeSlide(1)">&#10095;</button>
+
+            <p>
+                Хто ж такі Керфури?<br>
+Керфури це твій початковий робот помічник який знадобиться тобі з самого початку гри, раджу почати накопичувати кредити (ігрову валюту) та купляти саме його бо він буде тобі допомагати з ремонтом серверів, також є Омега Керфур але він в іншому розділі.<br>
+<br>
+Функціонал-<br>
+-Потребує зарядки<br>
+-Може чинити сервера<br>
+-Можна погладити<br>
+<br>
+Використання досить просте, вмикаєш його і вибираючи четвертий розділ та натискаючи E він поїде лагодити сервера.
+            </p>
+
+            <div class="posSet">
+                <button class="settings" id="OpenMovy"><img src="../media_file/settings-svgrepo-com.svg" width="20px"/></button>
+            </div>
+        </main>
+
+        <script src="2 KerfuriJS.js" defer></script>
+        <script src="https://kit.fontawesome.com/bfec730d56.js" crossorigin="anonymous"></script>
+
+
+
+        <div id="Mova">
+            <div class="Mova_box">
+                <p class="zagol">Налаштування</p>
+                <p class="MusicalN"> Налаштування Музики</p>
+                <div class="pos1244">
+                <label for="volume">Гучність:</label>
+                <input type="range" id="volume" min="0" max="1" step="0.01">
+                <label class="switch2">
+                    <input type="checkbox" id="toggle-play" checked>
+                    <span class="slider2"></span>
+                </div>
+                </label>
+                <div class="pos19031"><p>Налаштування Мови</p></div>
+                    <div class="pos3244">
+<div class="posUA1213"> <button class="uamov" onclick="switchLanguage('naUA')"></button> <div class="posUA1212"> <p>Українська мова</p></div></div>
+<div class="posRU1213"> <button class="rumov" onclick="switchLanguage('naRU')"></button> <div class="posRU1212"><p>Руский язык</p></div></div>
+<div class="posUS1213"> <button class="usmov" onclick="switchLanguage('naUS')"></button> <div class="posUS1212"><p>English</p>    </div></div>
+                    </div>
+            </div>
+        </div>
+     
+        <audio id="background-music" src="../media_file/Voices of the Void： Argemwell Music.mp3" loop></audio>
+
+</body>
+</html>

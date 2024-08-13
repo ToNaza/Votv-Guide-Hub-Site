@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(60, 60, 60);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+body p{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px;
+    font-family: "Jura";
+    color: white;
+    margin: 15px;
+}
+
+.phone{
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.PC{
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.phone, .PC{
+width: 100px;
+height: 100px;
+border-radius: 20px;
+background-color: rgb(227, 227, 227);
+margin: 20px;
+display: inline-block;
+margin-top: 100px;
+margin-bottom: 80px;
+}
+
+.phone, .PC, img{
+width: 100px;
+}
+
+.PC img{
+    padding: 10px;
+}
+
+.baza{
+    text-align: center;
+}
+
+.PC:hover {
+    transform: scale(1.1); /* Збільшує розмір на 10% */
+    background-color: #00eaff; /* Робить трохи темнішим */
+  }
+
+  .phone:hover {
+    transform: scale(1.1); /* Збільшує розмір на 10% */
+    background-color: #00eaff; /* Робить трохи темнішим */
+  }
