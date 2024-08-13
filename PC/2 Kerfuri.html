@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
 
 </head>
+
+
 <body>
 
     <main>
@@ -18,7 +20,16 @@
             <span class="votv">VotV Guide</span> 
             <span class="hub">Hub</span> 
         </div>
-        <p>Керфури, їх призначення в грі, як ними користвуватися та головне, як швидко на них заробити, ви знайтете на цьому посту.</p>
+
+        <div class="naUA lang-section" id="naUA"> <p>Керфури, їх призначення в грі, як ними користвуватися та головне, як швидко на них заробити, ви знайтете на цьому посту.</p> </div>
+
+
+        <div class="naRU lang-section" id="naRU" style="display: none;"> <p>Керфуры, их назначение в игре, как ими пользоваться и главное, как быстро на них заработать, вы найдете в этом посте.</p>
+        </div>
+        
+        
+        <div class="naUS lang-section" id="naUS" style="display: none;"><p>Kerfurs, their purpose in the game, how to use them, and most importantly, how to quickly earn with them, you will find in this post.</p> </div>
+
 
         <div class="slider">
             <div class="slider-container">
@@ -31,7 +42,7 @@
             <button class="photo1" onclick="changeSlide(-1)">&#10094;</button>
             <button class="photo2" onclick="changeSlide(1)">&#10095;</button>
 
-            <p>
+            <div class="naUA lang-section" id="naUA"><p>
                 Хто ж такі Керфури?<br>
 Керфури це твій початковий робот помічник який знадобиться тобі з самого початку гри, раджу почати накопичувати кредити (ігрову валюту) та купляти саме його бо він буде тобі допомагати з ремонтом серверів, також є Омега Керфур але він в іншому розділі.<br>
 <br>
@@ -41,40 +52,128 @@
 -Можна погладити<br>
 <br>
 Використання досить просте, вмикаєш його і вибираючи четвертий розділ та натискаючи E він поїде лагодити сервера.
-            </p>
+            </p> </div>
 
-            <div class="posSet">
-                <button class="settings" id="OpenMovy"><img src="../media_file/settings-svgrepo-com.svg" width="20px"/></button>
-            </div>
+
+            <div class="naRU lang-section" id="naRU" style="display: none;"><p>
+                Кто такие Керфуры?<br>
+                Керфуры – это твой начальный робот-помощник, который понадобится тебе с самого начала игры. Рекомендую начать накапливать кредиты (игровую валюту) и покупать именно его, так как он будет помогать с ремонтом серверов. Также есть Омега Керфур, но он в другом разделе.<br>
+                <br>
+                Функционал-<br>
+                - Требует зарядки<br>
+                - Может чинить сервера<br>
+                - Можно погладить<br>
+                <br>
+                Использование довольно простое: включаешь его, выбираешь четвертый раздел и нажимаешь E, он поедет чинить сервера.
+            </p> </div>
+            
+            
+            <div class="naUS lang-section" id="naUS" style="display: none;"><p>
+                Who are the Kerfurs?<br>
+                Kerfurs are your initial robot assistant that will be useful to you from the very beginning of the game. I recommend starting to accumulate credits (in-game currency) and purchasing it, as it will help you with server repairs. There is also an Omega Kerfur, but it is in a different section.<br>
+                <br>
+                Features-<br>
+                - Requires charging<br>
+                - Can repair servers<br>
+                - Can be petted<br>
+                <br>
+                Usage is quite simple: turn it on, select the fourth section, and press E, and it will go to repair the servers.
+            </p> </div>
+            
+
+
         </main>
+
+        <footer> 
+            <button class="settings" id="OpenMovy"><img src="../media_file/settings-svgrepo-com.svg" width="20px"/></button>
+        </footer>
+
 
         <script src="2 KerfuriJS.js" defer></script>
         <script src="https://kit.fontawesome.com/bfec730d56.js" crossorigin="anonymous"></script>
 
 
-
-        <div id="Mova">
-            <div class="Mova_box">
-                <p class="zagol">Налаштування</p>
-                <p class="MusicalN"> Налаштування Музики</p>
-                <div class="pos1244">
-                <label for="volume">Гучність:</label>
-                <input type="range" id="volume" min="0" max="1" step="0.01">
-                <label class="switch2">
-                    <input type="checkbox" id="toggle-play" checked>
-                    <span class="slider2"></span>
-                </div>
-                </label>
-                <div class="pos19031"><p>Налаштування Мови</p></div>
-                    <div class="pos3244">
-<div class="posUA1213"> <button class="uamov" onclick="switchLanguage('naUA')"></button> <div class="posUA1212"> <p>Українська мова</p></div></div>
-<div class="posRU1213"> <button class="rumov" onclick="switchLanguage('naRU')"></button> <div class="posRU1212"><p>Руский язык</p></div></div>
-<div class="posUS1213"> <button class="usmov" onclick="switchLanguage('naUS')"></button> <div class="posUS1212"><p>English</p>    </div></div>
+        <div class="naUA lang-section" id="naUA">
+            <div id="Mova">
+                <div class="Mova_box">
+                    <p class="zagol">Налаштування</p>
+                    <p class="MusicalN"> Налаштування Музики</p>
+                    <div class="pos1244">
+                    <label for="volume">Гучність:</label>
+                    <input type="range" id="volume" min="0" max="1" step="0.01">
+                    <label class="switch2">
+                        <input type="checkbox" id="toggle-play" checked>
+                        <span class="slider2"></span>
                     </div>
-            </div>
-        </div>
-     
+                    </label>
+                    <div class="pos19031"><p>Налаштування Мови</p></div>
+                        <div class="pos3244">
+    <div class="posUA1213"> <button class="uamov" onclick="switchLanguage('naUA')"></button> <div class="posUA1212"> <p>Українська мова</p></div></div>
+    <div class="posRU1213"> <button class="rumov" onclick="switchLanguage('naRU')"></button> <div class="posRU1212"><p>Руский язык</p></div></div>
+    <div class="posUS1213"> <button class="usmov" onclick="switchLanguage('naUS')"></button> <div class="posUS1212"><p>English</p>    </div></div>
+                        </div>
+                </div>
+            </div> </div>
+
+
+        <div class="naRU lang-section" id="naRU" style="display: none;">
+            <div id="Mova2">
+                <div class="Mova2_box">
+                    <p class="zagol">Настройки</p>
+                    <p class="MusicalN"> Настройки музыки</p>
+                    <div class="pos1244">
+                    <label for="volume">Громкость:</label>
+                    <input type="range" id="volume" min="0" max="1" step="0.01">
+                    <label class="switch2">
+                        <input type="checkbox" id="toggle-play" checked>
+                        <span class="slider2"></span>
+                    </div>
+                    </label>
+                    <div class="pos19031"><p>Настройки языка</p></div>
+                        <div class="pos3244">
+    <div class="posUA1213"> <button class="uamov" onclick="switchLanguage('naUA')"></button> <div class="posUA1212"> <p>Українська мова</p></div></div>
+    <div class="posRU1213"> <button class="rumov" onclick="switchLanguage('naRU')"></button> <div class="posRU1212"><p>Руский язык</p></div></div>
+    <div class="posUS1213"> <button class="usmov" onclick="switchLanguage('naUS')"></button> <div class="posUS1212"><p>English</p>    </div></div>
+                        </div>
+                </div>
+            </div> </div>
+        
+        
+        <div class="naUS lang-section" id="naUS" style="display: none;">
+            <div id="Mova3">
+                <div class="Mova3_box">
+                    <p class="zagol">Settings</p>
+                    <p class="MusicalN"> Music settings</p>
+                    <div class="pos1244">
+                    <label for="volume">Loudness:</label>
+                    <input type="range" id="volume" min="0" max="1" step="0.01">
+                    <label class="switch2">
+                        <input type="checkbox" id="toggle-play" checked>
+                        <span class="slider2"></span>
+                    </div>
+                    </label>
+                    <div class="pos19031"><p>Language settings</p></div>
+                        <div class="pos3244">
+    <div class="posUA1213"> <button class="uamov" onclick="switchLanguage('naUA')"></button> <div class="posUA1212"> <p>Українська мова</p></div></div>
+    <div class="posRU1213"> <button class="rumov" onclick="switchLanguage('naRU')"></button> <div class="posRU1212"><p>Руский язык</p></div></div>
+    <div class="posUS1213"> <button class="usmov" onclick="switchLanguage('naUS')"></button> <div class="posUS1212"><p>English</p>    </div></div>
+                        </div>
+                </div>
+            </div> </div>
+
+
+
+    </body>
+
+        <div class="naUA lang-section" id="naUA"> </div>
+
+
+        <div class="naRU lang-section" id="naRU" style="display: none;"> </div>
+        
+        
+        <div class="naUS lang-section" id="naUS" style="display: none;"> </div>
+        
+
         <audio id="background-music" src="../media_file/Voices of the Void： Argemwell Music.mp3" loop></audio>
 
-</body>
 </html>

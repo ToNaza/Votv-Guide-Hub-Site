@@ -24,6 +24,22 @@ document.getElementById("Mova").addEventListener("dblclick", function() {
     document.getElementById("Mova").classList.remove("open");
 });
 
+document.getElementById("OpenMovy").addEventListener("click", function() {
+    document.getElementById("Mova2").classList.add("open")
+});
+
+document.getElementById("Mova2").addEventListener("dblclick", function() {
+    document.getElementById("Mova2").classList.remove("open");
+});
+
+document.getElementById("OpenMovy").addEventListener("click", function() {
+    document.getElementById("Mova3").classList.add("open")
+});
+
+document.getElementById("Mova3").addEventListener("dblclick", function() {
+    document.getElementById("Mova3").classList.remove("open");
+});
+
 
 document.addEventListener('DOMContentLoaded', function() {
     var audio = document.getElementById('background-music');
