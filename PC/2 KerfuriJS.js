@@ -79,3 +79,11 @@ function switchLanguage(langId) {
         }
     });
 }
+
+
+
+document.getElementById('musicDiv').addEventListener('click', function() {
+    const audio = document.getElementById('audio');
+    audio.currentTime = 0; // Скидаємо аудіо до початку
+    audio.play();
+});
