@@ -11,15 +11,17 @@ body{
     align-items: center;
     flex-direction: column;
     margin-top: 80px;
+    height: 100%;
+    margin: 10;
 }
 
 body p{
-    text-align: center;
     margin-top: 20px;
     font-size: 25px;
     font-family: "Jura";
     color: white;
     margin: 15px;
+    max-width: 1000px;
 }
 
 .phone{
@@ -53,6 +55,10 @@ width: 100px;
     text-align: center;
 }
 
+.vid p{
+    text-align: center;
+}
+
 .PC:hover {
     transform: scale(1.1); /* Збільшує розмір на 10% */
     background-color: #00eaff; /* Робить трохи темнішим */
@@ -62,3 +68,93 @@ width: 100px;
     transform: scale(1.1); /* Збільшує розмір на 10% */
     background-color: #00eaff; /* Робить трохи темнішим */
   }
+
+
+  .Nazwa {
+    font-size: 23px;
+    font-family: 'Kalam';
+    background-color: black;
+    margin: 10px;
+    padding: 5px;
+    width: 190px; 
+    height: 40px;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: -50px;
+}
+
+.votv {
+    color: white;
+}
+
+.hub {
+    color: #FF8000;
+}
+
+#container {
+    width: 400px; /* Фіксована ширина контейнера */
+    height: 250px; /* Фіксована висота контейнера */
+    border: 5px solid black;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden; /* Щоб приховати зайве */
+    background-color: rgb(31, 31, 31);
+    margin-bottom: 40px;
+}
+
+#container img,
+#container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Зображення та відео зберігають співвідношення сторін і заповнюють контейнер */
+}
+
+#slideshow {
+    width: 100%;
+    max-width: 500px;
+    border: 5px solid black; /* Чорна рамка товщиною 5px */
+    padding: 10px; /* Відступ між зображенням та рамкою */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Додає тінь */
+    background-color: rgb(112, 112, 112);
+}
+
+@media (min-width: 768px) {
+    #container {
+        width: 500px; /* Ширина контейнера для більших екранів */
+        height: 300px; /* Висота контейнера для більших екранів */
+    }
+}
+
+
+.snow {
+    position: fixed; /* Замість absolute, щоб залишатися на фоні */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Замість 100% для точного контролю */
+    height: 100vh; /* Використовувати vh для адаптації висоти */
+    pointer-events: none;
+    z-index: 9999;
+    background: transparent;
+}
+
+.snowflake {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    opacity: 0.8;
+    animation: snowfall linear infinite;
+}
+
+@keyframes snowfall {
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+
+.version{
+    font-size: 20px;
+    text-align: left;
+}
