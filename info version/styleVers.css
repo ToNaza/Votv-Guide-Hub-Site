@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(60, 60, 60);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+    height: 100%;
+    margin: 10;
+}
+
+
+body p{
+    margin-top: 20px;
+    font-size: 25px;
+    color: white;
+    margin: 15px;
+    max-width: 1000px;
+}
+
+
+.Nazwa {
+    font-size: 23px;
+    font-family: 'Kalam';
+    background-color: black;
+    margin: 10px;
+    padding: 5px;
+    width: 190px; 
+    height: 40px;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: -50px;
+}
+
+.votv {
+    color: white;
+}
+
+.hub {
+    color: #FF8000;
+}
+
+.infoUp{
+    margin-top: 70px;
+    text-align: center;
+}
+
+.infoUp2{
+    color: white;
+    font-size: 20px;
+    font-family: 'Kalam';
+    padding-top: 20px;
+}
